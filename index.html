@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>GrapplTech Project</title>
+</head>
+<body>
+     <div id="nav">
+        <img src="Images/GrapplTech.png" alt="">
+        <div class="nav-links" id="nav-links" > 
+       <a href="#">Home</a>
+       <a href="#">About</a>
+       <a href="#">Services</a>
+       <a href="#">Testimonials</a>
+       <a href="#">Contact Us</a>
+       <a href="#" class="btn">Get Started</a>
+       <i class="fa-solid fa-bars" id="menu-icon" onclick="toggleMenu()"></i>
+    </div>
+    <div id="hero">
+        <div class="hero-sections">
+            <div class="hero-left">
+            <h1>We Grapple the Perfect Talent, Wherever They Are.</h1>
+            <p> At GrapplTech, our mission is to empower businesses worldwide by providing top-notch remote outsourcing solutions that drive efficiency, innovation, and growth. We are dedicated to delivering exceptional value through a combination of expert talent, cutting-edge technology, and a commitment to excellence. </p> <br>
+            <a href="#" class="btn1">Learn More</a>
+            </div>
+            <div class="hero-right">
+                <img src="Images/GrapplTech_Meeting.jpg" alt="">
+            </div>
+        </div>
+    </div>
+        <video autoplay loop muted src="videos/background.video.mp4"></video>
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById("nav-links");
+                if (navLinks.style.display === "flex") {
+                    navLinks.style.display = "none";
+                } else {
+                    navLinks.style.display = "flex";
+                }
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kalam";
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+
+  width: 100%;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: fixed;
+}
+
+#nav {
+  height: 130px;
+  width: 100%;
+    display: flex; 
+  align-items: center;
+  padding: 0 120px;
+  gap: 80px;
+  position: fixed;
+  justify-content: flex-start;
+  z-index: 999;
+}
+ .nav-links {
+  display: flex;
+  gap: 20px;
+} 
+ 
+#nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#nav a:hover {
+  color: blueviolet;
+}
+
+#nav img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.btn {
+  background: blue;
+  font-size: 18px;
+  font-weight: bold;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+.btn:hover {
+  background-color: blueviolet;
+}
+
+#nav a.btn {
+  color: #fff;
+}
+
+#hero {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-sections {
+  display: flex;
+}
+
+.hero-right img {
+  width: 350px;
+  height: 250px;
+  margin-right: 120px;
+  margin-top: 105px;
+  border-radius: 10px;
+
+}
+
+.hero-left h1 {
+  font-size: 33px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  color: black;
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+.hero-left p {
+  width: 50%;
+  margin-left: 50px;
+  line-height: 1.7;
+  color: grey;
+}
+
+.btn1 {
+  background: blue;
+  font-size: 18px;
+  font-weight: bold;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.btn1:hover {
+  background-color: blueviolet;
+}
+
+.fa-bars{
+  color: blueviolet;
+  cursor: pointer;
+  font-size: 30px;
+  visibility: hidden;
+}
+@media (max-width: 768px) {
+  #nav {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+     position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    padding: 15px;
+    border-top: 1px solid #444;
+  }
+
+  .fa-bars {
+    display: block;
+    margin-left: auto;
+  }
+}
